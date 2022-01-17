@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(12, 12, 53);
+  color: white;
+}
+header{
+    height: 13vh;
+}
+header ul{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    font-size: 1.2rem;
+
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.home a{
+    color: red;
+}
+.social{
+    cursor: pointer;
+}
+
+.socialIcons{
+    position: absolute;
+    height: 5vh;
+    top: 7vh;
+    left: 43vw;
+    width: 12vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+i{
+    cursor: pointer;
+}
+
+/* main section starts */
+main{
+    overflow: hidden;
+  pointer-events: none;
+
+}
+
+.slide{
+    height: 87vh;
+    width: 93vw;
+    position: absolute;
+    top: 7rem;
+    left: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.intro{
+    height: 100vh;
+    width: 100vw;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.textInt{
+    position: absolute;
+    top: 20rem;
+    color: white; 
+    /* display: none; */
+
+}
+
+/* about section */
+nav{
+    display: block;
+}
+
+.navs{
+    height: 90vh;
+    width: 7rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navs i{
+    font-size: 2.5rem;
+    /* cursor: pointer; */
+    position: relative;
+    top: -5rem;
+}
+
+.prog-cont, .mail, .git{
+    height: 50vh;
+    width: 50vw;
+    border: 2px solid red;
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+.front-end, .backend, .cPro{
+    display: flex;
+    margin-left: 2rem;
+    width: 50rem;
+}
+
+.front-end h1, .backend h1, .cPro h1{
+    width: 13rem;
+    
+}
+
+.anm{
+    width: 100%;
+    height: 1rem;
+    background-color: white;
+    margin-left: 10rem;
+}
+.prog-cont{
+    opacity: 0;
+}
+.prog-cont.act{
+    opacity: 1;
+}
+
+.mail{
+    border: 2px solid white;
+    opacity: 0;
+}
+
+.mail.act{
+    opacity: 1;
+
+}
+.git{
+    border: 2px solid yellow;
+    opacity: 0;
+}
+
+.git.act{
+    opacity: 1;
+
+}
